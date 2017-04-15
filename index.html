@@ -9,7 +9,7 @@
   section
   {
     width:100%;
-    height:100%;
+    height:200%;
   }
 
   .cl_white
@@ -25,6 +25,30 @@
   img:hover
   {
     opacity: 0.5;
+  }
+
+  .testimonials
+  {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bulldozer.jpg);
+    background-position: center;
+    background-size: cover;
+    height:520px;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .carousel-indicators
+  {
+    bottom: -80px;
+  }
+
+  .carousel-inner .item img
+  {
+    border-radius: 100%;
+    border:3px solid #e67e22;
+    width: 170px;
+    height: 170px;
+    padding: 5px;
   }
   </style>
   </head>
@@ -131,8 +155,46 @@
   </div>
 </section>
 
-<!--Testimonal section?-->
-<section class="">
-
+<!--Testimonal section-->
+<section class="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="testimonial" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#testimonial" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonial" data-slide-to="1"></li>
+            <li data-target="#testimonial" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/1test.jpg" width="170" height="170" class="center-block">
+              <div class="testimonial-caption text-center">
+                <h2>JIM CORBET</h2>
+                <h3>Senior Web Designer</h3>
+                <p>He's awesome! He's awesome! He's awesome!</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/2test.jpg" width="170" height="170" class="center-block">
+              <div class="testimonial-caption text-center">
+                <h2>JIM CORBET</h2>
+                <h3>Senior Web Designer</h3>
+                <p>He's awesome! He's awesome! He's awesome!</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/3test.jpg" width="170" height="170" class="center-block">
+              <div class="testimonial-caption text-center">
+                <h2>JIM CORBET</h2>
+                <h3>Senior Web Designer</h3>
+                <p>He's awesome! He's awesome! He's awesome!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
   </body>
