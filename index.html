@@ -1,36 +1,95 @@
 <!DOCTYPE html>
-<head>
-  <title>Portfolio Website</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
-<body>
-  <!--navigation bar-->
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <div class="navbar-header">
-      <div class="navbar-brand">LOGO</div>
+  <head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--Stylesheet-->
+  <style>
+  section
+  {
+    width:100%;
+    height:100%;
+  }
+
+  .cl_white
+  {
+    color:white;
+  }
+
+  section h1
+  {
+    padding-top: 80px;
+  }
+
+  img-hover
+  {
+    opacity: 0.5;
+  }
+  </style>
+  </head>
+
+  <body>
+    <!--navigation bar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-header">
+        <div class="navbar-brand">LOGO</div>
+      </div>
+
+    <div class="collapse navbar-collapse" id="navi">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+  <!--Image and Main Title-->
+  <section id="home" style="background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/child.jpg); background-size:cover; margin-top:-50px;background-attachment:fixed;">
+    <h1 class="cl_white text-center">My Portfolio</h1>
+    <p class="cl_white text-center">This is me!!!</p>
+    <button class="btn btn-default center-block">About Me!</button>
+  </section>
+
+<!--Main Body Section: Display of Work-->
+<section class="container">
+  <div class="page-header">
+    <h2 class="text-center">My Work</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="images/child.jpg" class="img-responsive img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/child.jpg" class="img-responsive img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/child.jpg" class="img-responsive img-thumbnail">
+      </div>
     </div>
 
-  <div class="collapse navbar-collapse" id="navi">
-    <ul class="nav navbar- nav navbar-right">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#work">My Work</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="#about">About Us</a></li>
-    </ul>
-  </div>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="images/child.jpg" class="img-responsive img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/child.jpg" class="img-responsive img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="images/child.jpg" class="img-responsive img-thumbnail">
+      </div>
+    </div>
 </div>
-</nav>
+</section>
 
 
-
-
-
-</body>
+  </body>
