@@ -22,7 +22,36 @@
   <script type="text/javascript">
     function validate()
     {
-      alert("This is just for checking");
+      var stephanie=document.getElementById("stephanie");
+      var fname=document.getElementById("fname").value;
+      var lname=document.getElementById("lname").value;
+      var email=document.getElementById("email").value;
+      var password=document.getElementById("password").value;
+
+      if(fname == "" || lname == "" || email == "" || password == "")
+      {
+        stephanie.innerHTML='<span style="color:red; font-weight:bold;">Please fill all the required fields</span>';
+      }
+
+      else if(fname.length < 3)
+      {
+        stephanie.innerHTML='<span style="color:red; font-weight:bold;">Your first name is too short!</span>';
+      }
+
+      else if(lname.length < 3)
+      {
+        stephanie.innerHTML='<span style="color:red; font-weight:bold;">Your last name is too short!</span>';
+      }
+
+      else if(password.length < 8)
+      {
+        stephanie.innerHTML='<span style="color:red; font-weight:bold;">Your password must be 8 to 16 characters inbetween.</span>';
+      }
+
+      else
+      {
+        stephanie.innerHTML='<span style="color:green; font-weight:bold;">Your form is submitted successfully!</span>';
+      }
     }
   </script>
 
@@ -275,13 +304,17 @@
   </div>
 </section>
 
-<!---->
-<section class="container">
-  <input type="text" placeholder="First Name"><br><br>
-  <input type="text" placeholder="Last Name"><br><br>
-  <input type="text" placeholder="Email"><br><br>
-  <input type="password" placeholder="Password"><br><br>
-  <input type="button" value="Submit" >
+<!--Form-->
+<section class="container col-md-offset-4">
+  <div class="col-md-6">
+  <div id="stephanie" style="height:50px;"></div>
+
+  <input type="text" placeholder="First Name" class="form-control" id="fname" ><br><br>
+  <input type="text" placeholder="Last Name" class="form-control" id="lname" ><br><br>
+  <input type="text" placeholder="Email" class="form-control" id="email" ><br><br>
+  <input type="password" placeholder="Password" class="form-control" id="password" ><br><br>
+  <input type="button" class="btn btn-success btn-block" value="Submit" onClick="validate()"; >
+</div>
 </section>
   </body>
 </html>
